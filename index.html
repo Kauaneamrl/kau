@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homem-Aranha: Herói Aracnídeo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header role="banner">
+    <h1 tabindex="0">Homem-Aranha: Herói Aracnídeo</h1>
+    <nav role="navigation" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#introducao">Introdução</a></li>
+        <li><a href="#filmes">Filmes</a></li>
+        <li><a href="#jogos">Jogos</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Controles de acessibilidade -->
+  <div id="acessibilidade-controles">
+    <label>
+      <input type="checkbox" id="toggle-contraste" hidden />
+      <span class="botao">Alto Contraste</span>
+    </label>
+
+    <input type="radio" name="zoom" id="zoom-normal" hidden checked />
+    <input type="radio" name="zoom" id="zoom-grande" hidden />
+    <input type="radio" name="zoom" id="zoom-maior" hidden />
+
+    <label for="zoom-normal" class="botao">A</label>
+    <label for="zoom-grande" class="botao">A+</label>
+    <label for="zoom-maior" class="botao">A++</label>
+  </div>
+
+  <!-- Zoom e contraste funcionam com CSS puros abaixo -->
+  <main>
+    <section id="introducao" tabindex="0">
+      <h2>Introdução</h2>
+      <p>O Homem-Aranha é um dos super-heróis mais icônicos da Marvel. Criado por Stan Lee e Steve Ditko em 1962, Peter Parker ganhou os corações de milhões com sua história de responsabilidade e coragem.</p>
+    </section>
+
+    <section id="filmes" tabindex="0">
+      <h2>Filmes</h2>
+      <p>Desde os clássicos com Tobey Maguire até as produções mais recentes com Tom Holland, o Homem-Aranha já teve diversas versões nos cinemas, cada uma trazendo uma nova abordagem ao personagem.</p>
+    </section>
+
+    <section id="jogos" tabindex="0">
+      <h2>Jogos</h2>
+      <p>O herói também brilhou nos games! Os títulos mais recentes para PlayStation como "Marvel’s Spider-Man" e "Miles Morales" foram muito elogiados pela jogabilidade e enredo imersivo.</p>
+    </section>
+
+    <section id="curiosidades" tabindex="0">
+      <h2>Curiosidades</h2>
+      <ul>
+        <li>O uniforme clássico do Homem-Aranha foi inspirado em acrobatas e lutadores de wrestling.</li>
+        <li>O personagem quase foi rejeitado pela Marvel nos anos 60!</li>
+        <li>Ele já fez parte dos Vingadores, Quarteto Fantástico e até dos X-Men em algumas histórias.</li>
+      </ul>
+    </section>
+
+    <section id="contato" tabindex="0">
+      <h2>Contato</h2>
+      <form aria-label="Formulário de contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required aria-required="true" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true" />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required aria-required="true"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Fã do Homem-Aranha. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
